@@ -1,15 +1,95 @@
----
-title: Le Wagon - Middleman
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Le Wagon Middleman Airbnb</title>
+    <link href="stylesheets/application-4f606044.css" rel="stylesheet" />
+    <script src="javascripts/application-93de88c9.js"></script>
+    <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
+  </head>
+  <body>
+    
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXjupphm_9l7-O4RVKbnIyBnwzMwKUE-sA9-p5A68r2pd06oj8');">
+  <div class="banner-content">
+    <h1>Welcome  home</h1>
+     <p>Book unique homes and experience a city like a local.</p>
+     <form action="#" class="form-inline">
+       <input type="text" class="form-control input-lg" placeholder="Where?">
+       <input type="text" class="form-control input-lg" placeholder="When?">
+       <select name="" id="" class="form-control input-lg">
+         <option value="1">1 guest</option>
+         <option value="2">2 guests</option>
+         <option value="3">3 guests</option>
+       </select>
+       <input type="submit" class="btn btn-primary btn-lg" value="Search">
+     </form>
   </div>
 </div>
+
+<div class="container" id="home-flats">
+  <h2 class="text-center">Recent flats</h2>
+  <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('https://www.milanocard.it/wp-content/uploads/2016/05/duomo-di-milano.jpg');">
+          <div class="card-category">Milano, Italy</div>
+          <div class="card-description">
+            <h3>Robert's home</h3>
+            <p>Charming room in the ass of Milan</p>
+            <p class="rating">
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+            </p>
+          </div>
+          <img src="images/image.jpg" class="card-user" alt="M" />
+          <a href="flats/ssaunier.html" class="card-link"></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('https://static.lexpress.fr/medias_11552/w_1888,h_1056,c_crop,x_154,y_157/w_2000,h_1125,c_fill,g_north/v1499872733/vue-de-lyon-depuis-la-saone-au-crepuscule_5914924.jpg');">
+          <div class="card-category">Lion, France</div>
+          <div class="card-description">
+            <h3>Regis' home</h3>
+            <p>Castle in Lion</p>
+            <p class="rating">
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+            </p>
+          </div>
+          <img src="images/regis.jpeg" class="card-user" alt="Papillard" />
+          <a href="flats/papillard.html" class="card-link"></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('http://embassynvisa.com/wp-content/uploads/2017/01/Milan-Italy-800x500.jpg');">
+          <div class="card-category">Milano, It</div>
+          <div class="card-description">
+            <h3>Marco's home</h3>
+            <p>Nice flat in Heart of Milano</p>
+            <p class="rating">
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+            </p>
+          </div>
+          <img src="https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/oum9xg0ts92fabm4ticw.jpg" class="card-user" alt="Monsieurpaillard" />
+          <a href="flats/monsieurpaillard.html" class="card-link"></a>
+        </div>
+      </div>
+  </div>
+</div>
+
+  </body>
+</html>
